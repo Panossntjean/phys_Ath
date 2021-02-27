@@ -1,0 +1,34 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import math as mt
+
+#A)
+#N   = 2000 #how many steps i chose to make
+dt  = 0.01 #2/N # the step
+x   = 0
+y   = 0
+xax =[]
+yax =[]
+vo  = 20
+g   = 10
+θ   = mt.pi/6
+vx = vo*mt.cos(θ)
+vy = vo*mt.sin(θ)
+
+while y > -1 :
+    xax +=[x]
+    yax +=[y]
+    x  += vx*dt
+    vy += (-g*dt)
+    y  += vy*dt
+    if y <= 0 : break 
+
+    
+xaxi=np.array(xax)
+yaxi=np.array(yax)
+plt.plot(xaxi,yaxi,color = 'r')
+plt.title('The trajectory of the particle')
+plt.xlabel('x(m)')
+plt.ylabel('y(m)')
+plt.grid()
+plt.show()
