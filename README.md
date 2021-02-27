@@ -1,0 +1,1 @@
+# phys_Athhello there fellow studing buddy . All i have to offer are my trial- error or even some correct codes for simple python programming . Please share your thoughts/tips or suggest a coding solution on particula0r problems. Will be happy to hear - read - solve.
